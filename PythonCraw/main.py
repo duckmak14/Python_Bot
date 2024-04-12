@@ -9,7 +9,7 @@ from discord.ext import commands
 intents = discord.Intents.all()
 intents.message_content = True
 bot = commands.Bot(command_prefix=".",intents=intents)
-BOTTOKEN = '' # token của bot được tạo
+BOTTOKEN = 'MTIyODAxMjEzMjI2NDU3OTExMg.GNJTFk.TjuW3Jpl4Ce9KfKoAMKb7nzBMdZcfzMY9pct3g' # token của bot được tạo
 @bot.event
 async def on_message(message): # Sự kiện khi gửi message
     messageTime = message.created_at # Thời gian gửi messages 
