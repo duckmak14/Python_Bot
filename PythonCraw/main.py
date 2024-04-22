@@ -1,9 +1,7 @@
 import discord
 import pytz
-import asyncio
 from datetime import datetime
 from discord.ext import commands
-import time
 
 
 intents = discord.Intents.all()
@@ -17,6 +15,7 @@ async def on_message(message): # Sự kiện khi gửi message
     current_time_utc = datetime.now(pytz.UTC)
     time_difference = current_time_utc - messageTime # Thời gian tính từ lúc gửi đến lúc crawl về
     #print(time_difference)
+    print(message.guild) # tên của server
     print(message.channel) # tên của channel
     print(message.content) # text messages 
     if message.attachments:
